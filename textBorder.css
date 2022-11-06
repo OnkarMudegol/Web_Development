@@ -1,0 +1,8 @@
+.div{
+    border: 10pxx dashed red;
+}
+.div1{
+    border-width: 5px;
+    border-style:double;
+    border-color: black;
+}
