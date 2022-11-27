@@ -1,0 +1,23 @@
+#table_1{
+    border: 2px solid rgb(26, 13, 13);
+    border-collapse: collapse;
+}
+#td1{
+    border: 2px solid rgb(26, 13, 13);
+}
+#table2{
+    border: 2px solid rgb(26, 13, 13);
+    border-collapse: collapse;
+}
+td,tr,th{
+    border: 2px solid rgb(26, 13, 13);
+    text-align: center;
+}
+#table3{
+        border: 2px solid rgb(26, 13, 13);
+        border-collapse: collapse;
+}
+
+#td3,#tr3{
+    border: 2px solid rgb(26, 13, 13);
+}
