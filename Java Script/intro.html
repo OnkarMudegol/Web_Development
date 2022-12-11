@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+</head>
+<body>
+    <h2>Intro to Javascript</h2>
+    <script>
+        // console.log("Hello World")
+        // // var a = 5;
+        // let a = 5;
+        // const d = 10;
+        // var b = "Value of a is"
+        // console.log("Value of a is "+a)
+        // console.log(b+" "+a)
+        // console.log("Value of constant d is "+d)
+        
+        // Operators
+        // unary operator - when one operand and one operator
+        // let a = 5;
+        // a = -a;
+        // console.log(a)
+        // // binary operator - when 
+        // let num1 = 5;
+        // let num2 = 10;
+        // console.log("num1 + num2: "+(num1+num2))
+        // console.log("num1 * num2: "+(num1*num2))
+        // console.log("num1 / num2: "+(num1/num2))
+        // console.log("num1 - num2: "+(num1-num2))
+        // console.log("num1 ** num2: "+(num1**num2))
+
+        //Strings
+        let str = "This is a string";
+        let name = "ABC";
+        let rollNum = 2;
+        let temp = ` My name is : ${name} and roll number is : ${rollNum}`
+        length = str.length;
+        console.log(length);
+        console.log(name+" "+rollNum);
+        console.log(temp);
+        console.log(str)
+        str1 = "The sea is ";
+        str2 = "salty";
+        result = str1.concat(str2);
+        console.log(result)
+        result2 = result.replace("sea","ocean");
+        console.log(result2);
+        result3 = result.endsWith("fish");
+        console.log(result3)
+        result4 = result.endsWith("salty")
+        console.log(result4)
+        result5 = result.indexOf("Ocean");
+        console.log(result5)
+        //If Else
+        let num3 = 5;
+        if (num3 < 6)
+        {
+            console.log("True")
+        }
+        else
+        {
+            console.log("False")
+        }
+        //Switch Case
+        let num4 = 12;
+        switch(num4){
+            case 10:
+                console.log("Value is 10");
+                break; //if you dont apply break it will print all the following statements
+            case 12:
+                console.log("Value is 12");
+                break;
+            case 8:
+                console.log("Value is 8");
+                break;
+            default:
+                console.log("Value is none of the above");
+                break;
+        }
+
+    </script>
+</body>
+</html>
