@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="button" value="Print" id="btn"> -->
+    <p id="dateAndTime">Date and Time is: <span id="DateTimeValue">Default</span></p>
+    <script>
+        // let btn = document.getElementById("btn");
+        // function greet(){
+        //     console.log("Hi!!")
+        // }
+        // let timeout = setTimeout(greet,5000)
+        // let interval = setInterval(greet,1000);
+        // clearInterval(interval);
+
+        //making a clock
+        let txtchg = document.getElementById("DateTimeValue");
+        let stop = document.getElementById("stop");
+        function display(){
+            let dateTime = new Date();
+            // console.log(dateTime);
+            txtchg.innerHTML = dateTime;
+        }
+        display();
+        let interval = setInterval(display,1000);     
+    </script>
+</body>
+</html>
