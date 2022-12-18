@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet corporis placeat fuga, nulla sapiente incidunt rem ex fugiat autem deleniti ipsam aperiam! Consectetur, molestiae dicta?\</p>
+    <input type="button" value="Button" id="button">
+    <input type="button" value="Color" id="clr">
+    <script>
+        var colors = ["blue", "red", "yellow", "maroon"]
+        let para = document.getElementById("para");
+        let btn = document.getElementById("button");
+        let clr = document.getElementById("clr");
+        btn.addEventListener("mouseover", function testHandler(){
+            console.log("mouse is over the button")
+        })
+        btn.addEventListener("mouseout", function testHandler2(){
+            console.log("mouse is away from button")
+        })
+        var random_color = colors[Math.floor(Math.random()*colors.length)];
+        clr.onclick = function colorchange(){
+            para.style.color = random_color;
+        }
+    </script>
+</body>
+</html>
