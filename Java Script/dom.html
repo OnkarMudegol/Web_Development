@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainDiv">
+        <h1>Javascript and DOM</h1>
+        <ul>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, exercitationem in a laudantium neque quis excepturi id doloribus fugit corporis earum quae perspiciatis? Quasi, aperiam! Temporibus vel dolore dolorem quod, nesciunt numquam autem, id hic explicabo illum porro consequatur perspiciatis fugiat repudiandae? Provident, quam reprehenderit.</p>
+
+            <!-- <input type="button" value="Alert" onclick="giveAlert()"> -->
+            <input type="button" value="Hide" id="hide">
+    </div>
+    <script>
+        let mainDiv = document.getElementById("mainDiv");
+        console.log(mainDiv);
+        let para = document.getElementById("para");
+        let hide = document.getElementById("hide");
+        hide.onclick = function hide(){
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+            para.style.display = "block";
+            }
+        }
+        // let aletButton = document.getElementById("alertButton");
+        // alertButton.onclick = function giveAlert(){
+        //     alert("Clicked on Alert!!");
+        // }
+        // function giveAlert(){
+        //     alert("Clikced on Button")
+        // }
+    </script>
+</body>
+</html>
